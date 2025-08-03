@@ -1,9 +1,9 @@
 # DeepFake-Detection-Using-DeepLearning
 
-## Introduction -
+## Introduction :-
 DeepFakes are synthetic images or videos generated to modify existing images or videos to fit the purpose of an individual/entity. DeepFakes, though quite useful for individual privacy protection and movie editing, has often found itself being implemented for fraudulent and defamation activities. In our project, we are addressing one of these issues i.e. defamation. We are attempting to create a model that will successfully detect a deep fake video and mark the video as tampered-with, in case of a Deepfake. The bigger picture we are looking at is fake news and rumors generated from these deep fakes. Their capability to influence the elections via social media is quite evident from past incidents. We are tackling the visual deep fake aspect of this problem.It was the motivation behind using the CelebDF dataset for our project. Our focus lies in creating a highly efficient model that detects deep fakes in a video. While detecting these deep fakes is not particularly easy, it is a more arduous task when video instead of images are involved. The existing research in this field majorly relates to deep fakes in images and very little work has been done on videos. Moreover, quite a few of those instances are cover the theoretical aspect of how one can possibly approach the issue. Our paper discusses how different models should be put together and makes use of pre-trained models to get better accuracy. Our approach involves starting with vanilla CNN models and moving up the accuracy order by using CNN transfer learning coupled with RNNs to capture temporal natures of the video frames. The results are interesting as they showcase how the use of RNNs can alter results in such problem statements in comparison to using standalone CNNs. Despite this the architecture of CNN plays a key role not only in computation power but also final accuracy of the model.
 
-## Dataset Used -
+## Dataset Used :-
   We are using the Celeb-DF dataset.
   Link to the dataset :
   1.**https://drive.google.com/drive/folders/1SxCb_Wr7N4Wsc-uvjUl0i-6PpwYmwN65**.
@@ -11,7 +11,7 @@ DeepFakes are synthetic images or videos generated to modify existing images or 
 
 It is a large-scale challenging dataset for deepfake forensics. It includes 479 original videos and 455 corresponding DeepFake videos.The videos consists cropped celebrity faces. The real source videos are based on publicly available YouTube video clips of 59 celebrities of diverse genders, ages, and ethic groups. The DeepFake videos are generated using an improved DeepFake synthesis method. As a result, the overall visual quality of the synthesized DeepFake videos in Celeb-DF is greatly improved when compared to existing datasets, with significantly fewer notable visual artifacts. The features of the dataset are the videos and a label of -fake/real.
 
-## Model Architecture Definitions -
+## Model Architecture Definitions :-
 For this project 3 different models are implemented and results are compared.The approach was to build from a baseline architecture and move towards more complex architectures. The transfer learning mechanism is used by using pretrained models.
 
 ### Model 1 : CNN Architecture
